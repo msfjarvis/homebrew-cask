@@ -9,4 +9,33 @@ class Zoxide < Formula
   def install
     system "cargo", "install", "--locked", "--root", prefix, "--path", "."
   end
+
+  def caveats
+    <<~EOS
+    Adding zoxide to your shell
+
+    If you currently use z, z.lua, or zsh-z, you may want to first migrate your existing database to zoxide:
+
+    zoxide migrate /path/to/db
+
+    ## zsh
+
+    Add the following line to your ~/.zshrc:
+
+    eval "$(zoxide init zsh)"
+
+    ## bash
+
+    Add the following line to your ~/.bashrc:
+
+    eval "$(zoxide init bash)"
+
+    ## fish
+
+    Add the following line to your ~/.config/fish/config.fish:
+
+    zoxide init fish | source
+
+    EOS
+  end
 end
