@@ -11,6 +11,14 @@ class Zoxide < Formula
     sha256 "890d472758ccd86818441a1bf960cd465d7b85771a6e9fb4811a96ab0a39ba29"
   end
 
+  def install
+    if OS.mac?
+      bin.install "zoxide-x86_64-apple-darwin" => "zoxide"
+    else
+      bin.install "zoxide-x86_64-unknown-linux-gnu" => "zoxide"
+    end
+  end
+
   def caveats
     <<~EOS
     Adding zoxide to your shell
