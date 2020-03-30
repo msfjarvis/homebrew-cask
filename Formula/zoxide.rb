@@ -6,7 +6,7 @@ class Zoxide < Formula
   if OS.mac?
     url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-apple-darwin"
     sha256 "54d48e71ebc08259a5e61e8cda1beeff5cd7f20a0ab53dfe142bc7b6b4821bc5"
-  elseif OS.linux?
+  elsif OS.linux?
     url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-unknown-linux-gnu"
     sha256 "890d472758ccd86818441a1bf960cd465d7b85771a6e9fb4811a96ab0a39ba29"
   end
