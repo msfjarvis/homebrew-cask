@@ -2,21 +2,11 @@ class Zoxide < Formula
   version "0.3.0"
   desc "A cd command that learns your habits"
   homepage "https://github.com/ajeetdsouza/zoxide"
-
-  if OS.mac?
-    url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-apple-darwin"
-    sha256 "54d48e71ebc08259a5e61e8cda1beeff5cd7f20a0ab53dfe142bc7b6b4821bc5"
-  elsif OS.linux?
-    url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-unknown-linux-gnu"
-    sha256 "890d472758ccd86818441a1bf960cd465d7b85771a6e9fb4811a96ab0a39ba29"
-  end
+  url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-unknown-linux-gnu"
+  sha256 "890d472758ccd86818441a1bf960cd465d7b85771a6e9fb4811a96ab0a39ba29"
 
   def install
-    if OS.mac?
-      bin.install "zoxide-x86_64-apple-darwin" => "zoxide"
-    else
-      bin.install "zoxide-x86_64-unknown-linux-gnu" => "zoxide"
-    end
+    bin.install "zoxide-x86_64-unknown-linux-gnu" => "zoxide"
   end
 
   def caveats
