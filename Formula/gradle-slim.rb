@@ -6,6 +6,8 @@ class GradleSlim < Formula
 
   bottle :unneeded
 
+  conflicts_with "gradle"
+
   def install
     rm_f Dir["bin/*.bat"]
     libexec.install %w[bin docs lib src]
