@@ -19,4 +19,4 @@ brew install https://raw.githubusercontent.com/msfjarvis/homebrew-tap/master/For
 - [gradle-slim](Formula/gradle-slim.rb): Binary releases of [Gradle](https://github.com/gradle/gradle) without the OpenJDK dependency.
 - [procs-bin](Formula/procs-bin.rb): Binary releases of [procs](https://github.com/dalance/procs) for quicker installs and no Rust dependency, since I manage my local installation with RustUp instead.
 - [shellcheck-bin](Formula/shellcheck-bin.rb): Binary releases of [shellcheck](https://github.com/koalaman/shellcheck). Linuxbrew builds this from source, pulling a ton of Haskell dependencies.
-- [zoxide](Formula/zoxide.rb): Formula for [zoxide](https://github.com/ajeetdsouza/zoxide), a fast cd command that learns your habits. Linuxbrew has no formula for this.
+- [zoxide-bin](Formula/zoxide.rb): Formula for binary releases of [zoxide](https://github.com/ajeetdsouza/zoxide), a fast cd command that learns your habits. Linuxbrew has no formula for this.

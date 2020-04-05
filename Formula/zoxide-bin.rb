@@ -1,4 +1,4 @@
-class Zoxide < Formula
+class ZoxideBin < Formula
   version "0.3.1"
   desc "A cd command that learns your habits"
   homepage "https://github.com/ajeetdsouza/zoxide"
