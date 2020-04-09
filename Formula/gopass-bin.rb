@@ -9,5 +9,8 @@ class GopassBin < Formula
 
   def install
     bin.install "gopass"
+    bash_completion.install "bash.completion"
+    zsh_completion.install "zsh.completion"
+    fish_completion.install "fish.completion"
   end
 end
