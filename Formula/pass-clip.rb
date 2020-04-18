@@ -3,7 +3,7 @@ class PassClip < Formula
   version "0.2"
   homepage "https://github.com/msfjarvis/pass-clip"
   url "https://github.com/msfjarvis/pass-clip/archive/v#{version}.tar.gz"
-  sha256 "d1f611e61c1f8ae55bd14f8f6054d06fcb9a2d973095367c1626842db66b3182"
+  sha256 "f3646954057dfe7fefd998eb95e3d9d2f56119bcd366f8ecb768c0ff76b264d6"
   head "https://github.com/msfjarvis/pass-clip.git"
 
   bottle :unneeded
