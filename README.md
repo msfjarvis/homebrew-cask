@@ -15,6 +15,7 @@ brew install https://raw.githubusercontent.com/msfjarvis/homebrew-tap/master/For
 
 ## Currently available formulae
 
+- [ccache-slim](Formula/ccache-slim.rb): Formula for [ccache](https://github.com/ccache/ccache) that does not install compiler symlinks. The upstream formula creates symlinks that force each compiler to use ccache which I find undesirable.
 - [pass-clip](Formula/pass-clip.rb): Formula for my fork of [pass-clip](https://github.com/ibizaman/pass-clip). Homebrew has no formula for this.
 - [pass-slim](Formula/pass-slim.rb): Formula for [pass](https://git.zx2c4.com/password-store/about) with GPG dependency removed since I install it myself and Homebrew pulls in a heavy Xorg bundle for it.
 - [pfetch](Formula/pfetch.rb): Formula for [pfetch](https://github.com/dylanaraps/pfetch). Homebrew has no formula for this and because there has been no release since the Makefile was added, I cannot attempt to upstream this.
