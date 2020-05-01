@@ -11,6 +11,7 @@ class PassClip < Formula
   depends_on "pass-slim"
 
   def install
+    system "mkdir -p #{HOMEBREW_PREFIX}/lib/password-store/extensions"
     system "cp clip.bash #{HOMEBREW_PREFIX}/lib/password-store/extensions/pass-clip"
     man1.install "pass-clip.1"
   end
