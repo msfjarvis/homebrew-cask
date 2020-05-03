@@ -1,9 +1,9 @@
 class ZoxideBin < Formula
-  version "0.3.1"
+  version "0.4.0"
   desc "A cd command that learns your habits"
   homepage "https://github.com/ajeetdsouza/zoxide"
   url "https://github.com/ajeetdsouza/zoxide/releases/download/v#{version}/zoxide-x86_64-unknown-linux-gnu"
-  sha256 "2e5fca4c457ce7eb97b8fe74850aff08518774ad48596c9ac7fa9525b5429a6c"
+  sha256 "7cf5a3e3ee001042de0fd2fc2fb0d316c0d77eca67df9525de4f8a44ea8d4251"
 
   def install
     bin.install "zoxide-x86_64-unknown-linux-gnu" => "zoxide"
